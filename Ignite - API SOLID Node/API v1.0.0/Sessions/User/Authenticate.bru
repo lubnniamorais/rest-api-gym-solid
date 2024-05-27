@@ -1,0 +1,22 @@
+meta {
+  name: Authenticate
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/sessions
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "email": "lu@gmail.com",
+    "password": "123456"
+  }
+}

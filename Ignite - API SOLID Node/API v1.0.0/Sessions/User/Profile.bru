@@ -1,0 +1,19 @@
+meta {
+  name: Profile
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/me
+  body: none
+  auth: bearer
+}
+
+headers {
+  User-Agent: insomnia/8.4.5
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmMTk5YTdiNy00ZWQwLTRlN2ItOGFjMy1mMGFmYWY2ZjhiNWEiLCJpYXQiOjE3MTYxNTM3OTJ9.H417hlVSzxeXOu8cVC7YFJnWXAJ54WuppcQac6AsupA
+}
